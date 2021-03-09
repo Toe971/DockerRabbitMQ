@@ -7,3 +7,4 @@ COPY definitions.json /etc/rabbitmq/definitions.json
 
 
 
+
