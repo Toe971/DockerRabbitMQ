@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "name": "guest",
+            "password": "guest",
+            "tags": "administrator"
+        },
+        {
+            "name": "raspi1",
+            "password": "raspi1",
+            "tags": "administrator"
+        },
+        {
+            "name": "raspi2",
+            "password": "raspi2",
+            "tags": "administrator"
+        }
+    ],
+    "vhosts" : [
+        {
+            "name": "/"
+        }
+    ],
+    "permission": [
+        {
+            "user": "guest",
+            "vhost": "/",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "raspi1",
+            "vhost": "/",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        },
+        {
+            "user": "raspi2",
+            "vhost": "/",
+            "configure": ".*",
+            "write": ".*",
+            "read": ".*"
+        }
+    ],
+    "parameters": [],
+    "policies": [],
+    "exchanges": [],
+    "bindings": []
+
+}
