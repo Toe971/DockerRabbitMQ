@@ -10,4 +10,5 @@ services:
   joshnode:
     build: ./nodeDocker
     ports:
-      - 8080:8080
+      - 15672:15672
+      - 5672:5672
