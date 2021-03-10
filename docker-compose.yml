@@ -1,6 +1,7 @@
 services:
   joshrabbitmq:
-    build: ./rabbitDocker
+    build: 
+      context: ./rabbitDocker
     environment:
       - RABBITMQ_CONFIG_FILE=/etc/rabbitmq/rabbitmq.conf
       - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit log [{console,[{level,debug}]}]
@@ -8,7 +9,6 @@ services:
       - 15672:15672
       - 5672:5672
   joshnode:
-    build: ./nodeDocker
-    ports:
-      - 15672:15672
-      - 5672:5672
+    build: 
+      context: ./nodeDocker
+    
